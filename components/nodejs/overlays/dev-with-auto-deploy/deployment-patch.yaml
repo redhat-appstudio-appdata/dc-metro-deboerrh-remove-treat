@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs
+  namespace: deboerrh
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ff591b904d3c2ddbd007d119cc72768bec426aae7b308690ed3f491f4e444f68
+        name: container-image
+        resources: {}
+status: {}
